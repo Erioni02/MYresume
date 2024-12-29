@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1d3557, #457b9d);
+            color: white;
+            padding: 40px 0;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            animation: fadeInLeft 1.5s;
+        }
+
+        #portfolio .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #portfolio .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #1d3557;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #457b9d;
+            border-radius: 5px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s forwards;
+        }
+
+        footer {
+            background: #1d3557;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center animate__animated animate__fadeInDown">
+        <h1>Erion Sfarqa</h1>
+        <p class="lead">Creative Developer | Designer | Innovator</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container py-5 fade-in">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p> Hi, my name is Erion Sfarqa. I’m 16 years old and from Kosovo, and I’m currently finishing high school. I’ll be turning 17 soon. For the past two years, I’ve worked as a freelancer on Fiverr, where I’ve gained valuable experience. I’ve also been studying coding at the Coding Training Academy and will be receiving my diploma from there shortly. In addition, I earned a diploma from the Kosovo Makers League. I’m passionate about technology and always eager to learn and improve my skills </p>
+            </div>
+            <div class="col-md-6">
+                <img src="unnamed.jpg" alt="About Me" class="img-fluid rounded" width="500px" height="200px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light py-5 fade-in">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Developer</h4>
+                    <p> Kotex | 6 months</p>
+                    <p>During my time working with Kotex, I was responsible for maintaining their website. I ensured that the site remained functional, user-friendly, and up-to-date with the latest information. My tasks included updating content, optimizing performance, troubleshooting issues, and implementing minor design adjustments to enhance user experience. This role helped me develop technical and problem-solving skills while ensuring the company's online presence met professional standards.</p>
+                </div>
+                <!-- Add more timeline items as needed -->
+                <div class="timeline-item">
+                    <h4>Innovator</h4>
+                    <p> Agro Vini | 4 months</p>
+                    <p> I had the opportunity to work as an innovator at Agro Vini for four months. During this time, I contributed to improving agricultural processes and implementing creative solutions to enhance efficiency. My role involved exploring new technologies and strategies to optimize production and support the company's goals. This experience allowed me to combine my technical knowledge with practical applications, fostering innovation in a real-world environment. </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4> Front-End -Programmer</h4>
+                    <p> Emona Market | 9 months</p>
+                    <p>I worked as a front-end programmer at Emona Market for nine months. In this role, I focused on designing and developing user interfaces for their digital platforms, ensuring a seamless and engaging user experience. My responsibilities included creating responsive designs, implementing interactive elements, and optimizing the website's performance across devices. This experience helped me enhance my skills in front-end development and deepened my understanding of creating user-friendly applications. </p>
+                </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container py-5 fade-in">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card animate__animated animate__zoomIn">
+                   <a href="ai.html"> <img src="Ai land.png" class="card-img-top" alt="Project" ></a>
+                    <a href="ai.html"><div class="card-body"></a>
+                        <h5 class="card-title">Ailandpage</h5>
+                        <p class="card-text">Landing page project showcasing modern UI/UX design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card animate__animated animate__zoomIn">
+                    <a href="ainimacionet.html"><img src="animationsz.png" class="card-img-top" alt="Project"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Animacionet</h5>
+                        <p class="card-text">Dynamic animations project using advanced CSS and JS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card animate__animated animate__zoomIn">
+                   <a href="store.html"> <img src="store.png" class="card-img-top" alt="Project"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Online Store</h5>
+                        <p class="card-text">E-commerce platform for seamless online shopping.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5 fade-in">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-secondary text-white text-center py-3">
+        <p>&copy; 2024 My Name. All Rights Reserved.</p>
+        <p>Follow me on <a href="#" class="text-white">LinkedIn</a>, <a href="#" class="text-white">GitHub</a>, <a href="#" class="text-white">Twitter</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
